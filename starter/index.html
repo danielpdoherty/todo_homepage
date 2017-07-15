@@ -4,7 +4,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Welcome, Dude</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
@@ -18,8 +20,10 @@
 		<form>
 					<label>Add something you need to do:</label>
 					<input type="text" name="addToDo" />
+					<input type="submit" value="Add" name="submit" />
+					<!-- consider changing out for image that brings up modal -->
 		</form>
-		<section>
+		<section class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 			<div class="cardHeader">
 				<img src="#" alt="Coding Projects Todo"/>
 				<h2>Coding Projects</h2>
@@ -27,11 +31,11 @@
 			</div>
 			<div class="cardBody">
 				<ul>
-					<li></li>
+					<li><img src="#" alt="delete list item" /></li>
 				</ul>
 			</div>
 		</section>
-		<section>
+		<section class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 			<div class="cardHeader">
 				<img src="#" alt="Daily Tasks Todo"/>
 				<h2>Daily Tasks</h2>
@@ -39,11 +43,11 @@
 			</div>
 			<div class="cardBody">
 				<ul>
-					<li></li>
+					<li><img src="#" alt="delete list item" /></li>
 				</ul>
 			</div>
 		</section>
-		<section>
+		<section class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 			<div class="cardHeader">
 				<img src="#" alt="Books To Read Todo"/>
 				<h2>Books To Read</h2>
@@ -51,10 +55,10 @@
 			</div>
 			<div class="cardBody">
 				<ul>
-					<li></li>
+					<li><img src="#" alt="delete list item" /></li>
 				</ul>
 			</div>
-		</section>
+		</section class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
 		<section>
 			<div class="cardHeader">
 				<img src="#" alt="Ongoing Projects Todo"/>
@@ -63,19 +67,19 @@
 			</div>
 			<div class="cardBody">
 				<ul>
-					<li></li>
+					<li><img src="#" alt="delete list item" /></li>
 				</ul>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<section>
+		<section class="col-lg-3 col-sm-12">
 			recently completed
 		</section>
-		<h3>
+		<h3class="col-lg-3 col-sm-12">
 			Daniel Doherty 2017.
 		</h3>
-		<a href="#">
+		<a href="#" class="col-lg-3 col-sm-12">
 			<img src="#" alt="Contact Dan" />
 		</a>
 	</footer>	
