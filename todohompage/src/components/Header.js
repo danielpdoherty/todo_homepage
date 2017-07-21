@@ -6,7 +6,7 @@ class Header extends Component {
 
 		this.state = {
 			date: new Date().toLocaleDateString(),
-			time: new Date().toLocaleTimeString()
+			time: new Date().toLocaleTimeString().replace(/:\d{2}\s/,' ');
 		}
 	}
 
