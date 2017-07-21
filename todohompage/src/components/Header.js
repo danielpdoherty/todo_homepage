@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AddTask from './AddTask.js';
 
 class Header extends Component {
 	constructor(props){
@@ -16,7 +17,7 @@ class Header extends Component {
       	<header>
 			<div className="welcomeMessage">
 				<h1>Welcome</h1>
-				<h1{this.state.date}</h1>
+				<h1>{this.state.date}</h1>
 				<h1>{this.state.time}</h1>
 			</div>
 			<AddTask />
