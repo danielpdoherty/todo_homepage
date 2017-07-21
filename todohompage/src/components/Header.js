@@ -7,9 +7,26 @@ class Header extends Component {
 
 		this.state = {
 			date: new Date().toLocaleDateString(),
-			time: new Date().toLocaleTimeString().replace(/:\d{2}\s/,' ');
+			time: new Date().toLocaleTimeString().replace(/:\d{2}\s/,' ')
 		}
 	}
+
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({
+      time: new Date().toLocaleTimeString().replace(/:\d{2}\s/,' ')
+    });
+  }
 
   render() {
     return (
